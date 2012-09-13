@@ -85,7 +85,7 @@
 	                        <div class="navbar-form pull-right">
 	                        	<input id="email" class="span2" type="text" placeholder="Email">
 	                           	<input id="pass" class="span2" type="password" placeholder="Password">
-	                            <button class="btn" type="submit">Login</button>
+	                            <button id="login" class="btn" type="submit">Login</button>
 	                            <a href="#" role="button" class="btn">Register</a>
 	                        </div>
 	                    </div>

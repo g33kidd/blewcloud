@@ -5,9 +5,10 @@
 class Request {
 	
 	public static function login_req($vars) {
-		echo "<pre>";
-		print_r($vars);
-		echo "</pre>";
+		$email = $vars['email'];
+		$pass = $vars['pass'];
+		
+		echo $email . " " . $pass;
 	}
 	
 	public static function register_req($vars) {
