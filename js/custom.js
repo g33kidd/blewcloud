@@ -11,4 +11,14 @@ $(document).ready( function() {
 		});
 	});
 	
+	$('#register').click(function() {
+		var type = "register";
+		var pass = $('#pass').attr('value');
+		var pass = $('#pass').attr('value');
+		var pass = $('#pass').attr('value');
+		var pass = $('#pass').attr('value');
+		var pass = $('#pass').attr('value');
+		var pass = $('#pass').attr('value');
+	});
+	
 });

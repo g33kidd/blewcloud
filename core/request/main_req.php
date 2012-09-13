@@ -8,10 +8,16 @@ class Request {
 		$email = $vars['email'];
 		$pass = $vars['pass'];
 		
-		echo $email . " " . $pass;
+		
 	}
 	
 	public static function register_req($vars) {
+		$first = $vars['first'];
+		$last = $vars['last'];
+		$name = $vars['name'];
+		$email = $vars['email'];
+		$pass = $vars['pass'];
+		$dob = $vars['dob'];
 		
 	}
 	

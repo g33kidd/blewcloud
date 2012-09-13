@@ -1,27 +1,28 @@
 <div class="container">
 	
-	<div class="hero-unit">
+	<div class="well">
 		<h1>Blewcloud</h1>
-		<p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+		<p>Welcome to blewcloud! We've been waiting for this, and hopefull you have too!</p>
+		<p><a href="register" class="btn" title="Register here!" >Register</a> <a href="register" class="btn" title="Register here!" >Login</a></p>
 	</div>
         
 	<div class="row">
 		<div class="span4">
 			<h2>Features</h2>
 			<div class="well">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu et nisl feugiat sollicitudin. Donec interdum imperdiet vulputate. Donec semper, lacus sit amet vulputate semper, ipsum lorem tempus massa, eget egestas lectus turpis eu risus. Sed varius aliquam enim in fermentum. Curabitur sed mi a enim accumsan imperdiet et in mauris. Praesent convallis pretium nulla, sit amet egestas magna elementum ut. Suspendisse tempus nisi in risus facilisis lacinia. Vestibulum accumsan bibendum vehicula. Nulla iaculis varius quam, in dictum sem accumsan sed. Nam eu elit nisi, ac molestie velit. In dolor libero, interdum non commodo ut, cursus dapibus ipsum. Vestibulum dictum, erat vitae blandit molestie, lectus lectus sodales justo, a gravida nibh ligula in turpis.
+				<p>During our 9 month collaboration we wanted to create a social network where it was very easy to use. This is something that we have thought about, and planned during the development of the site. Our design is created by the open source Twitter Bootstrap Project.</p>
 			</div>
 		</div>
 		<div class="span4">
 			<h2>Developers</h2>
 			<div class="well">
-			L	orem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu et nisl feugiat sollicitudin. Donec interdum imperdiet vulputate. Donec semper, lacus sit amet vulputate semper, ipsum lorem tempus massa, eget egestas lectus turpis eu risus. Sed varius aliquam enim in fermentum. Curabitur sed mi a enim accumsan imperdiet et in mauris. Praesent convallis pretium nulla, sit amet egestas magna elementum ut. Suspendisse tempus nisi in risus facilisis lacinia. Vestibulum accumsan bibendum vehicula. Nulla iaculis varius quam, in dictum sem accumsan sed. Nam eu elit nisi, ac molestie velit. In dolor libero, interdum non commodo ut, cursus dapibus ipsum. Vestibulum dictum, erat vitae blandit molestie, lectus lectus sodales justo, a gravida nibh ligula in turpis.
+				<p>Since we are developers like some that are joining this network. You might be interested in Creating a third-party app with our service. So we would like to present to you Dev Connect. Our service Dev Connect will allow developers extensive APIs for various platforms!</p>
 			</div>
 		</div>
 		<div class="span4">
-			<h2>About Us</h2>
+			<h2>Experience</h2>
 			<div class="well">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu et nisl feugiat sollicitudin. Donec interdum imperdiet vulputate. Donec semper, lacus sit amet vulputate semper, ipsum lorem tempus massa, eget egestas lectus turpis eu risus. Sed varius aliquam enim in fermentum. Curabitur sed mi a enim accumsan imperdiet et in mauris. Praesent convallis pretium nulla, sit amet egestas magna elementum ut. Suspendisse tempus nisi in risus facilisis lacinia. Vestibulum accumsan bibendum vehicula. Nulla iaculis varius quam, in dictum sem accumsan sed. Nam eu elit nisi, ac molestie velit. In dolor libero, interdum non commodo ut, cursus dapibus ipsum. Vestibulum dictum, erat vitae blandit molestie, lectus lectus sodales justo, a gravida nibh ligula in turpis.
+				<p>After almost a whole year of Planning, Programming, Designing, and Collaboration. You can finally experience Blewcloud at its fullest on September 17, 2012. Our service will be competely open at 1:00am that morning. You can find out more by emailing <a href="mailto:kiddj2015@gmail.com">Joshua Kidd</a></p>
 			</div>
 		</div>
 	</div>

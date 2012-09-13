@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="index">Blewcloud</a>
+                    <a class="brand" href="/blewcloud">Blewcloud</a>
                     <?php
                     if(Main::is_loggedin() == 1) {
                     	
@@ -57,7 +57,7 @@
 	                        	<input id="email" class="span2" type="text" placeholder="Email">
 	                           	<input id="pass" class="span2" type="password" placeholder="Password">
 	                            <button id="login" class="btn" type="submit">Login</button>
-	                            <a href="#" role="button" class="btn">Register</a>
+	                            <a href="register" role="button" class="btn">Register</a>
 	                        </div>
 	                    </div>
 	                    
@@ -86,7 +86,7 @@
 	                        	<input id="email" class="span2" type="text" placeholder="Email">
 	                           	<input id="pass" class="span2" type="password" placeholder="Password">
 	                            <button id="login" class="btn" type="submit">Login</button>
-	                            <a href="#" role="button" class="btn">Register</a>
+	                            <a href="register" role="button" class="btn">Register</a>
 	                        </div>
 	                    </div>
 	                    
