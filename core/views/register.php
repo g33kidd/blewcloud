@@ -3,35 +3,53 @@
 		<h1>Register for an account</h1>
 		<p><a href="login" class="btn" title="Register here!" >Have an account? Login!</a></p>
 	</div>
+	<div id="reg-info" class="alert hidden">
+  		<strong>Warning!</strong> Best check yo self, you're not looking too good.
+	</div>
 	<div class="form-horizontal">
-		<div class="control-group">
+		<div class="control-group" id="firstNameInput">
 			<label class="control-label" for="first">First Name</label>
 			<div class="controls">
-				<input type="text" id="first" placeholder="Email"><span id="email-helpText" class="help-inline"></span>
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-info-sign"></i></span>
+					<input type="text" id="first" placeholder="First">
+				</div>
 			</div>
 		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputEmail">Last Name</label>
+		<div class="control-group" id="lastNameInput">
+			<label class="control-label" for="last">Last Name</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Email"><span id="email-helpText" class="help-inline"></span>
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-info-sign"></i></span>
+					<input type="text" id="last" placeholder="Last">
+				</div>
 			</div>
 		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputEmail">Select Birthday</label>
+		<div class="control-group" id="dobSelect">
+			<label class="control-label" for="dob">Select Birthday</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Email"><span id="email-helpText" class="help-inline"></span>
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-gift"></i></span>
+					<input type="text" id="dob" placeholder="Birth">
+				</div>
 			</div>
 		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputEmail">Email</label>
+		<div class="control-group" id="emailInput">
+			<label class="control-label" for="email">Email</label>
 			<div class="controls">
-				<input type="text" id="inputEmail" placeholder="Email"><span id="email-helpText" class="help-inline"></span>
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-envelope"></i></span>
+					<input type="text" id="email" placeholder="Email">
+				</div>
 			</div>
 		</div>
-		<div class="control-group">
-			<label class="control-label" for="inputPass">Choose Password</label>
+		<div class="control-group" id="passwordInput">
+			<label class="control-label" for="regpass">Choose Password</label>
 			<div class="controls">
-				<input type="password" id="pass" placeholder="Password"><span id="pass-helpText" class="help-inline"></span>
+				<div class="input-prepend">
+					<span class="add-on"><i class="icon-lock"></i></span>
+					<input type="password" id="regpass" placeholder="Password">
+				</div>
 			</div>
 		</div>
 		<div class="control-group">

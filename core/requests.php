@@ -24,12 +24,27 @@ if(isset($_POST['type'])) {
 			Request::login_req($vars);
 			
 		break;
+		case "login-frm":
+			
+			$var = $type;
+			$email = $_POST['email'];
+			$pass = $_POST['pass'];
+			
+			$vars = array(
+				'type' => $type,
+				'email' => $email,
+				'pass' => $pass
+			);
+			
+			Request::login_req($vars);
+			
+		break;
 		case "register":
 			
 			$var = $type;
 			$first = $_POST['first'];
 			$last = $_POST['last'];
-			$name = "{$_POST['first']} {$_POST['last']}";
+			$dob = $_POST['dob'];
 			$email = $_POST['email'];
 			$pass = $_POST['pass'];
 			
@@ -37,14 +52,14 @@ if(isset($_POST['type'])) {
 				'type' => $type,
 				'first' => $first,
 				'last' => $last,
-				'name' => $name,
+				'dob' => $dob,
 				'email' => $email,
 				'pass' => $pass
 			);
 			
 			Request::register_req($vars);
 			
-		break;		
+		break;
 	}
 	
 }

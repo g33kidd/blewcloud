@@ -17,4 +17,12 @@ class Main {
 	
 }
 
+class User {
+	
+	public static function get_name() {
+		echo "Joshua Kidd";
+	}
+	
+}
+
 ?>

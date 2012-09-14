@@ -15,15 +15,11 @@ require_once('db/db_class.php');
 ## Routing Class
 require_once('class/route_class.php');
 
-/// Site Request Classes
-## Main requests
-require_once('request/main_req.php');
-
 # Initiates database connection found in core/db/db_class.php
 $db = new DB;
 
 ## API Class
-// Commented out for now until finished. 
+// Commented out for now until finished.
 // require_once('class/api_class.php');
 
 ?>

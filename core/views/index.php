@@ -2,8 +2,8 @@
 	
 	<div class="well">
 		<h1>Blewcloud</h1>
-		<p>Welcome to blewcloud! We've been waiting for this, and hopefull you have too!</p>
-		<p><a href="register" class="btn" title="Register here!" >Register</a> <a href="register" class="btn" title="Register here!" >Login</a></p>
+		<p>Welcome to blewcloud! We've been waiting for this, and hopefuly you have too!</p>
+		<p><a href="register" class="btn" title="Register here!" >Register</a> <a href="login" class="btn" title="Login here!" >Login</a></p>
 	</div>
         
 	<div class="row">
