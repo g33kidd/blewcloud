@@ -9,11 +9,11 @@ $(document).ready( function() {
 		if(email==""||pass==""){
 			
 		}else{
-			
+			$.post('core/requests.php', {type:type, email:email, pass:pass}, function(data) {
+				alert(data);
+			});
 		}
-		$.post('core/requests.php', {type:type, email:email, pass:pass}, function(data) {
-			alert(data);
-		});
+		
 	});
 	
 	$('#login-frm').click(function() {
@@ -48,6 +48,11 @@ $(document).ready( function() {
 			if(pass==""){ $('#passwordInput').addClass('error');}else{ $('#passwordInput').addClass('success');}
 		}else{
 			$.post('core/requests.php', {type:type, first:first, last:last, dob:dob, email:email, pass:pass}, function(data) {
+				if(data=="empty_fields"){
+					
+				}else{
+					
+				}
 				alert(data);
 			});
 		}

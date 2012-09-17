@@ -1,7 +1,7 @@
 <?php
 require_once('global.php');
 // This file contains all the main site JSON, AJAX, and other Request Types.
-
+$db = new DB;
 class Request {
 	
 	public static function login_req($vars) {

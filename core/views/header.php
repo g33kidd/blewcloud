@@ -34,7 +34,7 @@
                     </a>
                     <a class="brand" href="/blewcloud">Blewcloud</a>
                     <?php
-                    if(!Main::is_loggedin() == 1) {
+                    if(Main::is_loggedin() == 1) {
                     	
                     	?>
                     	
