@@ -4,7 +4,6 @@
 
 class Develop {
 	
-	
 	public static function site_mode($mode) {
 		switch($mode) { 
 			case "development": error_reporting(E_ALL); break;
@@ -14,13 +13,15 @@ class Develop {
 	
 	public static function site_offline($online) {
 		switch($online) {
-			case 1: header("Location: offline.php"); break;
-			case 0: echo "<meta name='site_info' content='site_is_online'>"; break;
+			case 1: header("Location: offline"); break;
+			case 0: return; break;
 		}
 	}
 	
+	public function global_site_message() {
+		
+	}
 	// More Functions go down here, just for site Maintanence Functions, Developer Functions, etc... ^^
-	
 }
 
 ?>

@@ -1,4 +1,5 @@
 <!-- Start Footer -->
+		<div class="container">
 			<hr>
 			<footer>
 				<p>&copy; Blewcloud 2012</p>

@@ -50,7 +50,7 @@ class Request {
 					'name' => $name,
 					
 				);
-				$reg = $db->query("INSERT INTO bc_users_entity (guid, first, last, name, username, password, salt, email, code) VALUES (?, ?, ?, ?)", $array);
+				$reg = $db->query("INSERT INTO bc_users_entity (guid, first, last, name, username, password, email, code) VALUES (?, ?, ?, ?)", $array);
 			}
 			
 			

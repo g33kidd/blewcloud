@@ -1,7 +1,6 @@
 <?php
 
-// This file contains all Site Functions:
-// Users, Databases, Posts, Friends, Actions, etc...
+// This file contains most Site Backend Functions:
 // Please comment each function, and make sure the MODE of the function is set correctly if Required. - Currently no MODE required.
 // When modes become available, there will be option for developers mode or public mode for a function/action.
 
@@ -13,14 +12,6 @@ class Main {
 		}else{
 			return 0;
 		}
-	}
-	
-}
-
-class User {
-	
-	public static function get_name() {
-		echo "Joshua Kidd";
 	}
 	
 }
