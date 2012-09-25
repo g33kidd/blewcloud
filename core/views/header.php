@@ -19,31 +19,31 @@ Develop::site_offline(SITE_OFFLINE);
 				<div class="navbar">
 					
 					<div class="navLinks">
-						<a href="index.php" class="item">Home</a>
-						<a href="about.php" class="item">About</a>
-						<a href="team.php" class="item">Team</a>
-						<a href="features.php" class="item">Features</a>
+						<a href="index" class="item">Home</a>
+						<a href="about" class="item">About</a>
+						<a href="team" class="item">Team</a>
+						<a href="features" class="item">Features</a>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<div class="user">
-					<div class="item login">Login</div>
-					<div class="item register">Register</div>
+					<a class="item login">Login</a>
+					<a class="item register">Register</a>
 				</div>
 				<? }else{ ?>
 				<div class="navbar">
 					
 					<div class="navLinks">
-						<a href="index.php" class="item">Stream</a>
-						<a href="about.php" class="item">Friends</a>
-						<a href="team.php" class="item">Notifs</a>
-						<a href="features.php" class="item">Apps</a>
+						<a href="home" class="item">Stream</a>
+						<a href="friends" class="item">Friends</a>
+						<a href="notifications" class="item">Notifs</a>
+						<a href="user" class="item">Apps</a>
 					</div>
 					<div class="clear"></div>
 				</div>
 				<div class="user">
-					<div class="item login">Profile</div>
-					<div class="item register">Logout</div>
+					<a href="user" class="item login">Profile</a>
+					<a href="logout" class="item register">Logout</a>
 				</div>
 				<? } ?>
 				

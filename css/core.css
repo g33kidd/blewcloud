@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p { padding:0; margin:0; }
 .headbar .logo { min-height:60px; width:80px; background-image:url('img/cloudIcon.png'); background-repeat:no-repeat; margin-right:10px; }
 .headbar .navbar { min-height:40px; float:left; }
 .headbar .navbar .navLinks { /* Something Useful */ }
-.headbar .navbar .navLinks .item { 
+.headbar .navbar .navLinks .item {
 	float:left; 
 	padding:11px 10px 0px 10px; 
 	font-size:15px;
@@ -34,16 +34,30 @@ h1, h2, h3, h4, h5, h6, p { padding:0; margin:0; }
 }
 
 .headbar .navbar .navLinks a { text-decoration:none; color:#F8FBFC; }
+.headbar .user .item { color:#F8FBFC; }
 
 .headbar .user { float:right; min-height:40px; min-width:100px; }
 .headbar .user .item { 
-	float:left;
-	min-height:30px;
-	min-width:60px;
-	padding:10px 10px 0px 10px;
+	float:left; 
+	padding:11px 10px 0px 10px; 
 	font-size:15px;
-	text-align:center;
-	background-color:#dceff9;
+	height:30px;
+	margin-top:4px;
+	margin-right:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+    min-width:50px;
+    text-align:center;
+}
+.headbar .user .item:hover {
+	background-color:#499BD6;
+	color:#badff4;
+	cursor:pointer;
 }
 
 /* Containers */
