@@ -1,10 +1,9 @@
 <div class="container">
-	<div class="well">
-		<h1>Register for an account</h1>
-		<p><a href="login" class="btn" title="Register here!" >Have an account? Login!</a></p>
-	</div>
+	<div class="page-header">Register for an account</div>
+	<p><a href="login" class="btn" title="Register here!" >Have an account? Login!</a></p>
+
 	<div id="reg-info" class="alert hidden">
-  		<strong>Warning!</strong> Best check yo self, you're not looking too good.
+  		<div id="msg-title"></div> <div id="msg"></div>
 	</div>
 	<div class="form-horizontal">
 		<div class="control-group" id="firstNameInput">
@@ -58,4 +57,4 @@
 			</div>
 		</div>
 	</div>
-	
+</div>

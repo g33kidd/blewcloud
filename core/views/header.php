@@ -27,8 +27,8 @@ Develop::site_offline(SITE_OFFLINE);
 					<div class="clear"></div>
 				</div>
 				<div class="user">
-					<a class="item login">Login</a>
-					<a class="item register">Register</a>
+					<a href="login" class="item login">Login</a>
+					<a href="register" class="item register">Register</a>
 				</div>
 				<? }else{ ?>
 				<div class="navbar">

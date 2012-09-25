@@ -1,10 +1,9 @@
 <div class="container">
-	<div class="well">
-		<h1>Login to your account</h1>
-		<p><a href="register" class="btn" title="Register here!" >Don't have an account? Try Registering!</a></p>
-	</div>
+	<div class="page-header">Login to your account</div>
+	<p><a href="register" class="btn" title="Register here!" >Don't have an account? Try Registering!</a></p>
+		
 	<div id="login-info" class="alert hidden">
-  		<strong>Warning!</strong> Best check yo self, some fields are missing or incorrect.
+  		<strong>Warning!</strong> <div id="msg">Best check yo self, some fields are missing or incorrect.</div>
 	</div>
 	<div class="form-horizontal">
 		<div class="control-group" id="emailInput">

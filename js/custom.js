@@ -49,7 +49,7 @@ $(document).ready( function() {
 		}else{
 			$.post('core/requests.php', {type:type, first:first, last:last, dob:dob, email:email, pass:pass}, function(data) {
 				if(data=="empty_fields"){
-					
+					$('#msg').html("Error!").fadeIn('fast');
 				}else{
 					
 				}

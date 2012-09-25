@@ -62,13 +62,4 @@ class Request {
 	
 }
 
-$vars = array(
-	'first' => "Joshua",
-	'last' => "kidd",
-	'dob' => "848275200",
-	'email' => "kiddj2015@gmail.com",
-	'pass' => "JoshuaK123"
-);
-Request::login_req($vars);
-
 ?>

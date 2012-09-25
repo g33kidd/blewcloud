@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p { padding:0; margin:0; }
 }
 
 .headbar .navbar .navLinks a { text-decoration:none; color:#F8FBFC; }
-.headbar .user .item { color:#F8FBFC; }
+.headbar .user .item { color:#F8FBFC; text-decoration:none; }
 
 .headbar .user { float:right; min-height:40px; min-width:100px; }
 .headbar .user .item { 
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p { padding:0; margin:0; }
 .row .home { width:280px; float:left; margin-right:20px; }
 .row .home .head { font-size:20px; margin-bottom:5px; border-bottom:1px solid #DCEFF9; text-align:left; font-family: 'Happy Monkey', cursive; }
 
-.pageHeader { font-family: 'Happy Monkey', cursive; font-size:25px; margin-bottom:5px; }
+.page-header { font-family: 'Happy Monkey', cursive; font-size:25px; margin-bottom:5px; }
 
 /* General Site floats, padding, other */
 .left { float:left; }
