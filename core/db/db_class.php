@@ -4,7 +4,7 @@
 
 class DB extends PDO {
 	
-	## variables
+	// variables
 	public $driver;
 	public $host;
 	public $dbname;
@@ -32,19 +32,29 @@ class DB extends PDO {
 		
 	}
 	
+	/*
 	public static function add_user($vars) {
 		$check = $db->query("SELECT id,user,email FROM users WHERE email='{$vars['email']}'");
 		$result = $db->fetch(PDO::FETCH_ASSOC);
 		echo $result;
 	}
 	
-	public static function del_user($vars) {
-		
+	public static function del_user($guid) {
+		try {
+			$query = $db->query("DELETE FROM bc_user_entity WHERE guid='{$guid}'");
+			$results = $db->fetch(PDO::FETCH_ASSOC);
+		}catch{
+			$err = $e->exception();
+		}
 	}
 	
 	public static function reg_user($vars) {
 		
 	}
+	
+	functions not needed for now
+	leave them commented for future use
+	*/
 }
 
 ?>

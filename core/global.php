@@ -10,6 +10,8 @@ require_once('config/vars.php');
 require_once('class/dev_class.php');
 ## Main Site Class
 require_once('class/main_class.php');
+## User Class
+require_once('class/user_class.php');
 ## Database Class and Connect to DB
 require_once('db/db_class.php');
 ## Routing Class

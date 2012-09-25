@@ -46,14 +46,17 @@ $(document).ready( function() {
 			if(dob==""){ $('#dobSelect').addClass('error');}else{ $('#dobSelect').addClass('success');}
 			if(email==""){ $('#emailInput').addClass('error');}else{ $('#emailInput').addClass('success');}
 			if(pass==""){ $('#passwordInput').addClass('error');}else{ $('#passwordInput').addClass('success');}
+			$('#msg-title').html("Error!").fadeIn('fast');
+			$('#msg').html("Some required fields are not filled in.").fadeIn('fast');
 		}else{
 			$.post('core/requests.php', {type:type, first:first, last:last, dob:dob, email:email, pass:pass}, function(data) {
 				if(data=="empty_fields"){
-					$('#msg').html("Error!").fadeIn('fast');
+					$('#msg-title').html("Error!").fadeIn('fast');
+					$('#msg').html("Some required fields are not filled in.").fadeIn('fast');
 				}else{
-					
+					alert(data);
 				}
-				alert(data);
+				
 			});
 		}
 	});

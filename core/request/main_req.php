@@ -1,5 +1,5 @@
 <?php
-require_once('../global.php');
+require_once('/../global.php');
 
 // This file contains all the main site JSON, AJAX, and other Request Types.
 
@@ -34,28 +34,18 @@ class Request {
 			$last = strtolower(ucfirst($last));
 			$name = "{$first} {$last}";
 			
-			$pass = hash('sha512', $pass);
-			$dob = 
-			
-			$query = $db->query("SELECT email FROM bc_users_entity WHERE email='{$email}'");
+			$query = $db->query("SELECT email FROM bc_users_entity WHERE email='{$email}' OR username='{$email}'");
 			$count = $query->rowCount();
 			
 			if($count != "0") {
 				echo "already_exists";
 			}else{
-				$array = array(
-					'guid' => "",
-					'first' => $first,
-					'last' => $last,
-					'name' => $name,
-					
-				);
-				$reg = $db->query("INSERT INTO bc_users_entity (guid, first, last, name, username, password, email, code) VALUES (?, ?, ?, ?)", $array);
+				$code = rand(0,8);
+				$pass = User::hashPass('sha512', $pass);
+				// add dob and make timestamp
+				
+				$reg = $db->query("INSERT INTO bc_users_entity (guid, first, last, name, username, password, email, code) VALUES ('','{$first}','{$last}','{$name}','','','{$email}','')");
 			}
-			
-			
-			// $reg = $db->prepare('INSERT INTO users (first, last, name, email, pass) VALUES ()');
-			// $reg->execute(array());
 		}
 		
 	}

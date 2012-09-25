@@ -5,6 +5,8 @@
 
 # Site Variables
 # site_mode should be set to 'development' or 'public'
+# site_offline is bool 1 or 0
+# site_version never changes until master Repo is pushed.
 define('SITE_MODE', 'development');
 define('SITE_VERSION', '1.0.0 Beta');
 define('SITE_OFFLINE', '0');
