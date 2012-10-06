@@ -29,7 +29,7 @@
 			<div class="controls">
 				<div class="input-prepend">
 					<span class="add-on"><i class="icon-gift"></i></span>
-					<input type="text" id="dob" placeholder="Birth">
+					<input type="date" id="dob" placeholder="Birth">
 				</div>
 			</div>
 		</div>
