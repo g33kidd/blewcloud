@@ -19,8 +19,6 @@ class User {
 		}
 	}
 	
-	
-	
 	public static function getUIinfo($guid) {
 		global $db;
 		if($guid==""){
@@ -39,6 +37,14 @@ class User {
 			$info = $db->query("SELECT * FROM bc_userinfo_entity WHERE guid='{$guid}'");
 			$userInfo = $db->fetch(PDO::FETCH_ASSOC);
 			return $userInfo;
+		}
+	}
+	
+	public static function login($vars) {
+		global $db;
+		if(!empty($vars)){
+			$login = $vars['email'];
+			$pass = $vars['pass'];
 		}
 	}
 	

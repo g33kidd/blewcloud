@@ -1,98 +1,84 @@
-body { margin:0 auto; padding:0; font-family:Helvetica; }
-h1, h2, h3, h4, h5, h6, p { padding:0; margin:0; }
+/*
+* Blewcloud Design v1.0.1
+* Copyright 2012, Joshua Kidd
+* www.joshuak.me
+* MINE!
+*/
 
-/* Imports */
-@import url(http://fonts.googleapis.com/css?family=Happy+Monkey|Inder);
-
-/* Top Part of Site */
-/* headerbar */
-.headbar { margin:0; margin-bottom:20px; padding:0; min-height:40px; padding:5px 0px; border-bottom:2px solid #499BD6; background-color:#76C2F8; }
-.headbar .logo { min-height:60px; width:80px; background-image:url('img/cloudIcon.png'); background-repeat:no-repeat; margin-right:10px; }
-.headbar .navbar { min-height:40px; float:left; }
-.headbar .navbar .navLinks { /* Something Useful */ }
-.headbar .navbar .navLinks .item {
-	float:left; 
-	padding:11px 10px 0px 10px; 
-	font-size:15px;
-	height:30px;
-	margin-top:4px;
-	margin-right:5px;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	-webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    transition: all 500ms ease;
-    min-width:50px;
-    text-align:center;
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-.headbar .navbar .navLinks .item:hover { 
-	background-color:#499BD6;
-	color:#badff4;
-	cursor:pointer;
+body {font-family:Helvetica; color:#fff;background-color:#7D7D7D;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-.headbar .navbar .navLinks a { text-decoration:none; color:#F8FBFC; }
-.headbar .user .item { color:#F8FBFC; text-decoration:none; }
-
-.headbar .user { float:right; min-height:40px; min-width:100px; }
-.headbar .user .item { 
-	float:left; 
-	padding:11px 10px 0px 10px; 
-	font-size:15px;
-	height:30px;
-	margin-top:4px;
-	margin-right:5px;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	-webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    transition: all 500ms ease;
-    min-width:50px;
-    text-align:center;
+body {
+	line-height: 1;
 }
-.headbar .user .item:hover {
-	background-color:#499BD6;
-	color:#badff4;
-	cursor:pointer;
+ol, ul {
+	list-style: none;
 }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
 
-/* Containers */
-.container { width:900px; margin-left:auto; margin-right:auto; }
-.maincont { margin-top:20px; }
+/* HEADBAR UI */
 
-/* Site Sections */
-.welcome .head { border-bottom:1px solid #DCEFF9; text-align:center; font-family: 'Happy Monkey', cursive; }
-.stats .head { border-bottom:1px solid #DCEFF9; text-align:center; font-family: 'Happy Monkey', cursive; }
 
-.welcome { color:#4087bb; width:430px; margin-bottom:20px; margin-right:20px; }
-.welcome .head {  font-size:25px; margin-bottom:5px; }
-.welcome .text { font-size:15px; margin-bottom:2px; font-family: 'Inder', sans-serif; padding:0px 5px; }
-.welcome .img { background-image:url('img/city.jpg'); min-height:200px; width:430px; background-repeat:no-repeat; margin-bottom:5px; }
-
-.stats { color:#4087bb; width:430px; margin-bottom:20px; }
-.stats .head { font-size:25px; margin-bottom:5px; }
-.stats .text { font-size:15px; margin-bottom:2px; }
-.stats .stat { width:430px; float:left; }
-.stats .stat .name { float:left; width:150px; font-size:20px; }
-.stats .stat .value { float:left; width:150px; font-size:20px; }
-
-.row { width:inherit; color:#4087bb; }
-.row .home { width:280px; float:left; margin-right:20px; }
-.row .home .head { font-size:20px; margin-bottom:5px; border-bottom:1px solid #DCEFF9; text-align:left; font-family: 'Happy Monkey', cursive; }
-
-.page-header { font-family: 'Happy Monkey', cursive; font-size:25px; margin-bottom:5px; }
-
-/* General Site floats, padding, other */
+/* Site Styles */
+.center { margin-left:auto; margin-right:auto; }
 .left { float:left; }
 .right { float:right; }
-.clear { clear:both; }
-.clear-no { clear:none; }
-.hidden { display:none; }
+.clearfix { clear:both; }
+.closex { float:left; }
+.closex:hover { cursor:pointer; }
 
-/* Rand Styles */
-.headbar .user .login { border-top-left-radius:5px; border-bottom-left-radius:5px; }
-.headbar .user .register { border-top-right-radius:5px; border-bottom-right-radius:5px; }
+/* Containers */
+.box { padding:10px 5px; }
+.bl { margin-left:20px; }
+.br { margin-right:20px; }
+.p10 { padding:10px; }
+.p5 { padding:5px; }
+.ph-20w-5 { padding:20px 5px; }
+.ph-5w-10 { padding:10px 10px; }
+
+/* Profile Colors */
+.orange1 { background:rgba(232, 152, 86, 0.5); }
+.yellow1 { background:rgba(232, 220, 86, 0.5); }
+.green1 { background:rgba(86, 232, 96, 0.5); }
+.blue1 { background:rgba(86, 166, 232, 0.5); }
+.blue2 { background:rgba(86, 166, 232, 0.3); }
+.blue3 { background:rgba(191, 224, 245, 0.1); }
+.red1 { background:rgba(232, 86, 86, 0.5); }
+
+.error { color: #b94a48; }

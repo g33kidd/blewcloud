@@ -1,1 +1,77 @@
-/* All Inputs Styling will go here. */
+/*
+* Blewcloud Design v1.0.1
+* Copyright 2012, Joshua Kidd
+* www.joshuak.me
+* MINE!
+* 
+All controls, inputs, buttons, etc... */
+
+
+.logintext {
+	padding:10px 10px;
+	outline:none;
+	border-radius:5px;
+	transition:all 800ms ease;
+	-webkit-transition:all 800ms ease;
+	margin-bottom:10px;
+	margin-top:10px;
+	border:0;
+	-webkit-box-shadow: 0px 0px 4px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 4px rgba(50, 50, 50, 1);
+	box-shadow:         0px 0px 4px rgba(50, 50, 50, 1);
+}
+.logintext:focus {
+	-webkit-box-shadow: 0px 0px 10px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    0px 0px 10px rgba(50, 50, 50, 1);
+	box-shadow:         0px 0px 10px rgba(50, 50, 50, 1);
+}
+
+.loginbtn {
+	background-color: #EEE;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEE), color-stop(100%, #CCC));
+	background-image: -webkit-linear-gradient(top, #EEE, #CCC);
+	background-image: -moz-linear-gradient(top, #EEE, #CCC);
+	background-image: -ms-linear-gradient(top, #EEE, #CCC);
+	background-image: -o-linear-gradient(top, #EEE, #CCC);
+	background-image: linear-gradient(top, #EEE, #CCC);
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #BBB;
+	border-radius: 3px;
+	color: #333;
+	font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	padding: 12px 0;
+	text-align: center;
+	text-shadow: 0 1px 0 #EEE;
+	width: 150px;
+	transition:all 1000ms ease;
+	-webkit-transition:all 1000ms ease;
+}
+.loginbtn:hover {
+	background:#FFF;
+	cursor:pointer;
+}
+
+.friendBtn {
+	background-color: #EEE;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EEE), color-stop(100%, #CCC));
+	background-image: -webkit-linear-gradient(top, #EEE, #CCC);
+	background-image: -moz-linear-gradient(top, #EEE, #CCC);
+	background-image: -ms-linear-gradient(top, #EEE, #CCC);
+	background-image: -o-linear-gradient(top, #EEE, #CCC);
+	background-image: linear-gradient(top, #EEE, #CCC);
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #BBB;
+	border-radius: 3px;
+	color: #333;
+	font: bold 11px/1 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	padding: 5px 0;
+	text-align: center;
+	text-shadow: 0 1px 0 #EEE;
+	width: 128px;
+	transition:all 1000ms ease;
+	-webkit-transition:all 1000ms ease;
+}
+.friendBtn:hover {
+	background:#FFF;
+	cursor:pointer;
+}
