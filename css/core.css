@@ -26,7 +26,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-body {font-family:Helvetica; color:#fff;background-color:#7D7D7D;}
+body {font-family:Helvetica; color:#fff;background-color:#D9EDF7;}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -62,6 +62,18 @@ table {
 .clearfix { clear:both; }
 .closex { float:left; }
 .closex:hover { cursor:pointer; }
+.logo {
+	background-image:url('img/cloudIcon.png'); 
+	background-repeat:no-repeat; 
+	min-width:80px; 
+	min-height:60px; 
+	max-width:80px;
+	max-height:60px;
+	margin-top:10px;
+}
+.logo:hover {
+	cursor:pointer;
+}
 
 /* Containers */
 .box { padding:10px 5px; }
@@ -72,7 +84,7 @@ table {
 .ph-20w-5 { padding:20px 5px; }
 .ph-5w-10 { padding:10px 10px; }
 
-/* Profile Colors */
+/* Colors of Things */
 .orange1 { background:rgba(232, 152, 86, 0.5); }
 .yellow1 { background:rgba(232, 220, 86, 0.5); }
 .green1 { background:rgba(86, 232, 96, 0.5); }
@@ -81,4 +93,6 @@ table {
 .blue3 { background:rgba(191, 224, 245, 0.1); }
 .red1 { background:rgba(232, 86, 86, 0.5); }
 
-.error { color: #b94a48; }
+.error { color: #b94a48; background-color: #f2dede; border: 2px solid #eed3d7; }
+.success { color: #468847; background-color: #dff0d8; border: 2px solid #d6e9c6; }
+.info { color: #3a87ad; background-color: #d9edf7; border: 2px solid #bce8f1; }

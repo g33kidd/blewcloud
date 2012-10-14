@@ -9,6 +9,11 @@ class Route {
 		return $uri[2];
 	}
 	
+	public static function get_user_uri() {
+		$user_uri = explode("/", $_SERVER["REQUEST_URI"]);
+		return $user_uri;
+	}
+	
 	public static function something() {
 		$uri = self::get_uri();
 		if($uri == ""){ $uri = "index"; }
@@ -31,7 +36,6 @@ class Route {
 			case "requests": include($inc2); break;
 			case "settings": include($inc2); break;
 		}
-		
 	}
 	
 }

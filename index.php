@@ -5,8 +5,9 @@
 	## Site Mode? Set this in core/config/vars.php
 	## Should be set to 'development' or 'public'
 	Develop::site_mode(SITE_MODE);
+	Develop::test_session(SITE_MODE);
 ?>
-<? include "core/views/header.php"; ?>
+<?php include "core/views/header.php"; ?>
 <!-- Start Body -->
 <?php
 
@@ -16,4 +17,4 @@ Route::something();
 ?>
 
 <!-- End Body -->
-<? include "core/views/footer.php"; ?>
+<?php include "core/views/footer.php"; ?>

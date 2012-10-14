@@ -24,21 +24,6 @@ if(isset($_POST['type'])) {
 			Request::login_req($vars);
 			
 		break;
-		case "login-frm":
-			
-			$var = $type;
-			$email = $_POST['email'];
-			$pass = $_POST['pass'];
-			
-			$vars = array(
-				'type' => $type,
-				'email' => $email,
-				'pass' => $pass
-			);
-			
-			Request::login_req($vars);
-			
-		break;
 		case "register":
 			
 			$var = $type;
@@ -57,7 +42,7 @@ if(isset($_POST['type'])) {
 				'pass' => $pass
 			);
 			
-			Request::register_req($vars);
+			User::register($vars);
 			
 		break;
 	}

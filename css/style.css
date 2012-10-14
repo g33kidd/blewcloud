@@ -12,15 +12,11 @@
 	color:#FFFFFF;
 	font-family: Helvetica, sans-serif;
 	position:static;
+	padding:10px 0px;
 }
-.logo {
-	background:url('img/cloudIcon.png') fixed no-repeat center 40px;
-}
+.ui-headbar .user { height:50px; width:100px; background:#D9EDF7; }
 
 /* Welcome login/register page */
-.welcome-background {
-	background:#162135 url('img/treem.jpg') fixed no-repeat center 40px;
-}
 .welcome-center { margin-top:150px; }
 .welcome-head {
 	font-size:80px;
@@ -38,20 +34,54 @@
 .welcome-join { margin-top:20px; color:#262626; }
 .welcome-join .head { font-size:25px; }
 
-.infotext { background-color:#DBDBDB; display:none; padding:10px 15px; border-radius:10px; margin-top:20px; }
+.infotext { display:none; padding:10px 15px; border-radius:10px; margin-top:20px; }
 /* end login/register page */
 
 /* Profile Only??? */
-/* px sizes in grid.css */
+/* widths are in grid.css */
 /* This is only visual */
-.profile-head-box { background:rgba(204, 204, 204, 0.60); min-height:150px; }
-.profile-head-box .pic { width:150px; height:150px; float:left; }
-.profile-head-box .pic img { width:150px; height:150px; }
-.profile-head-box .basicInfo { float:left; }
-.profile-head-box .basicInfo .basic { min-height:30px; font-size:30px; color:#D8DAE6; background:rgba(232, 72, 72, 0.65); }
-.profile-head-box .basicInfo .info { min-height:100px; min-width:160px; max-width:160px; text-align:center; font-size:18px; float:left; color:#D8DAE6; }
-.profile-head-box .userInfo { float:left; background:rgba(60, 141, 222, 0.65); min-height:150px; }
-.profile-head-box .basicInfo .basic .friendInfo { float:right; }
+.profile-head {
+	margin-top:10px;
+	padding-top:0;
+	padding-bottom:0;
+	padding-left:20px;
+	padding-right:20px;
+	background:#FCFCFC;
+	overflow:hidden;
+	-webkit-box-shadow: 0px 5px 17px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 17px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 17px rgba(50, 50, 50, 0.75);
+	z-index:1;
+	position: relative;
+}
+.profile-head .image { 
+	width:150px; height:150px; 
+	margin-bottom:-2px;
+	overflow:hidden;
+	border-left:2px solid #FAFAFA; 
+	border-right:2px solid #FAFAFA;
+	-webkit-box-shadow: 2px 20px  rgba(50, 50, 50, 0.4),  -2px 0 20px rgba(50, 50, 50, 0.4);   
+	-moz-box-shadow: 2px 0 20px rgba(50, 50, 50, 0.4),  -2px 0 20px rgba(50, 50, 50, 0.4);   
+	box-shadow: 2px 0 20px rgba(50, 50, 50, 0.4),  -2px 0 20px rgba(50, 50, 50, 0.4);
+}
+.profile-head .image img {
+	width:150px;
+}
+.profile-head .name { 
+	color:#000000; 
+	font-size:35px;
+	margin-left:20px;
+	margin-top:15px;
+	text-shadow: 3px 3px 8px rgba(150, 150, 150, 0.64);
+	transition:all 700ms ease;
+	-webkit-transition:all 700ms ease;
+}
+.profile-head .name:hover{color:#C4E3F3; /*text-shadow:3px 3px 8px rgba(92,92,92,0.64);*/ cursor:pointer;}
+.profile-head .item {color:#000000;margin-left:20px;}
+.profile-head .item .head-item { font-size:14px; border-bottom:1px solid #999999; padding-bottom:5px; margin-bottom:2px; }
+.profile-head .tag{color:#000000;font-size:12px;}
+
+.profile-page { z-index:5555; width:960px; margin-top:20px; height:400px; }
 
 .awpc { float:left; margin-top:20px; }
 .awpc .day .day-head { font-size:20px; }
@@ -69,19 +99,9 @@
 .post2 .controls { width:19px; float:left; margin-top:5px; }
 .post2 .post { width:450px; float:left; margin-top:5px; border-left:1px solid #BBBBBB; margin-bottom:5px; }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px; }
+::-webkit-scrollbar-thumb { border-radius: 10px; -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); }
 
 .randPics {
 	width:150px;

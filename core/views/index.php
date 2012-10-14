@@ -15,20 +15,22 @@
 				<div class="container center">
 					<div class="welcome-center center">
 						<div class="welcome-head two3 center">blewcloud</div>
-						<div class="welcome-notif center">We are currently an invite only service.</div>
+						<div class="welcome-notif center">We are currently an invite-only service.</div>
 						
+						<div class="foms">
+							<div class="welcome-login left">
+								<input type="text" class="logintext" name="userid" id="loginEmail" placeholder="Email Address">
+								<input type="password" class="logintext" name="pass" id="loginPass" placeholder="Password">
+								<button type="submit" class="loginbtn" name="lgnbtn" id="loginBtn">Login</button>
+							</div>
+							<div class="welcome-join left">
+								<input type="text" class="logintext" name="inv_emial" id="invEmail" placeholder="Email Address">
+								<button type="submit" class="loginbtn" name="invbtn" id="invBtn">Request Invite</button>
+							</div>
+							<div class="clearfix"></div>
+						</div>
 						<div class="infotext two3 center" id="info">
 								test
-						</div>
-						
-						<div class="welcome-login left">
-							<input type="text" class="logintext" name="userid" id="inputEmail" placeholder="Email Address">
-							<input type="password" class="logintext" name="pass" id="inputPass" placeholder="Password">
-							<button type="submit" class="loginbtn" name="lgnbtn" id="loginbutton">Login</button>
-						</div>
-						<div class="welcome-join left">
-							<input type="text" class="logintext" name="inv_emial" id="inviteEmail" placeholder="Email Address">
-							<button type="submit" class="loginbtn" name="invbtn" id="invitebutton">Request Invite</button>
 						</div>
 						
 					</div>

@@ -18,6 +18,19 @@ class Develop {
 		}
 	}
 	
+	public static function test_session($mode) {
+		switch($mode) {
+			case "development":
+				$_SESSION['user'] = 1;
+				$_SESSION['test'] = true;
+				return true;
+			break;
+			case "production":
+				return false;
+			break;
+		}
+	}
+	
 	public function global_site_message() {
 		
 	}
